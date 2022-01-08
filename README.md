@@ -18,7 +18,7 @@ This is a Dynamic Food Delivery Website.
 ## Screen-Shots
 #### HomePage
 <p align="left">
-  <img width="780" src="Preview/HomePage.png">
+  <img width="780" src="Previews/HomePage.png">
 </p>
 
 <hr>
@@ -26,7 +26,7 @@ This is a Dynamic Food Delivery Website.
 #### Foods Page
 <hr>
 <p align="left">
-  <img width="780" src="Preview/FoodsPage.png">
+  <img width="780" src="Previews/FoodsPage.png">
 </p>
 
 <hr>
@@ -34,7 +34,7 @@ This is a Dynamic Food Delivery Website.
 #### Cart Page
 <hr>
 <p align="left">
-  <img width="780" src="Preview/CartPage.png">
+  <img width="780" src="Previews/CartPage.png">
 </p>
 
 <hr>
@@ -42,7 +42,7 @@ This is a Dynamic Food Delivery Website.
 #### CheckOut
 <hr>
 <p align="left">
-  <img width="780" src="Preview/CheckoutPage.png">
+  <img width="780" src="Previews/CheckoutPage.png">
 </p>
 
 <hr>
@@ -50,7 +50,7 @@ This is a Dynamic Food Delivery Website.
 #### ContactPage
 <hr>
 <p align="left">
-  <img width="780" src="Preview/ContactPage.png">
+  <img width="780" src="Previews/ContactPage.png">
 </p>
 
 
