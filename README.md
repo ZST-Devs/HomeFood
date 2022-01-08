@@ -24,7 +24,6 @@ This is a Dynamic Food Delivery Website.
 <hr>
 
 #### Foods Page
-<hr>
 <p align="left">
   <img width="780" src="Previews/FoodsPage.png">
 </p>
@@ -32,15 +31,12 @@ This is a Dynamic Food Delivery Website.
 <hr>
 
 #### Cart Page
-<hr>
 <p align="left">
   <img width="780" src="Previews/CartPage.png">
 </p>
 
-<hr>
 
 #### CheckOut
-<hr>
 <p align="left">
   <img width="780" src="Previews/CheckoutPage.png">
 </p>
