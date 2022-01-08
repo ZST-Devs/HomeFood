@@ -1,4 +1,4 @@
-# HomeFood
+# HomeFood 🍕
 This is a Dynamic Food Delivery Website.
 
 ## Features
