@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}	
+
+
+<!-- Header Inner -->
+<div class="header-inner">
+	<div class="container">
+		<div class="cat-nav-head">
+			<div class="row">
+				<div class="col-12">
+					<div class="menu-area">
+						<!-- Main Menu -->
+						<nav class="navbar navbar-expand-lg">
+							<div class="navbar-collapse">	
+								<div class="nav-inner">	
+									<ul class="nav main-menu menu navbar-nav">
+										<li class="active"><a href="{% url 'home' %}">Home</a></li>
+										<li><a href="{% url 'foods' %}">Foods</a></li>												
+										<li><a href="{% url 'service' %}">Service</a></li>
+										<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+											<ul class="dropdown">
+												<li><a href="{% url 'cart' %}">Cart</a></li>
+												<li><a href="{% url 'checkout' %}">Checkout</a></li>
+											</ul>
+										</li>
+										<li><a href="{% url 'contact' %}">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+						<!--/ End Main Menu -->	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bread-inner">
+						<ul class="bread-list">
+							<li><a href="{% url 'home' %}">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+  
+	<!-- Start Contact -->
+	<section id="contact-us" class="contact-us section">
+		<div class="container">
+				<div class="contact-head">
+					<div class="row">
+						<div class="col-lg-8 col-12">
+							<div class="form-main">
+								<div class="title">
+									<h4>Get in touch</h4>
+									<h3>Write us a message</h3>
+								</div>
+								<form class="form" method="post" action="mail/mail.php">
+									<div class="row">
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Name<span>*</span></label>
+												<input name="name" type="text" placeholder="" id="username">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Email<span>*</span></label>
+												<input name="email" type="email" placeholder="" id="email">
+											</div>	
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Phone<span>*</span></label>
+												<input name="company_name" type="text" placeholder="" id="number">
+											</div>	
+										</div>
+										<div class="col-12">
+											<div class="form-group message">
+												<label>your message<span>*</span></label>
+												<textarea id="message" name="message" placeholder=""></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-group button">
+												<button id="submit" type="submit" class="btn ">Send Message</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="single-head">
+								<div class="single-info">
+									<i class="fa fa-phone"></i>
+									<h4 class="title">Call us Now:</h4>
+									<ul>
+										<li>+88 01700-000000</li>
+										<li>+88 01700-000000</li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-envelope-open"></i>
+									<h4 class="title">Email:</h4>
+									<ul>
+										<li><a href="mailto:info@yourwebsite.com">info@homefood.com</a></li>
+										<li><a href="mailto:info@yourwebsite.com">support@homefood.com</a></li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-location-arrow"></i>
+									<h4 class="title">Our Address:</h4>
+									<ul>
+										<li>Somewhere, Somewhere, Dhaka.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--/ End Contact -->
+	
+	<!-- Map Section -->
+	<div class="map-section">
+		<div id="myMap"></div>
+	</div>
+	<!--/ End Map Section -->
+	
+	<!-- Start Shop Newsletter  -->
+	<section class="shop-newsletter section">
+		<div class="container">
+			<div class="inner-top">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2 col-12">
+						<!-- Start Newsletter Inner -->
+						<div class="inner">
+							<h4>Newsletter</h4>
+							<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<input name="EMAIL" placeholder="Your email address" required="" type="email">
+								<button class="btn">Subscribe</button>
+							</form>
+						</div>
+						<!-- End Newsletter Inner -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- loader -->
+	<div class="loader">	
+		
+	</div>
+	<!-- End Shop Newsletter -->
+
+	<script
+			type="text/javascript"
+      
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+		></script>
+
+		<!-- Sweet alert js -->
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+		<script type="text/javascript">
+			// User ID
+			// user_id
+			// Access Token
+			// random_access-token
+
+			(function (name, email,msg) {
+				// emailjs.init("USERID");
+				emailjs.init("user_l8qDKoICtQuDkbYomxzkJ");
+			})();
+
+			
+
+			function validate() {
+				let loader = document.querySelector(".loader");
+				let name = document.querySelector("#username");
+				let email = document.querySelector("#email");
+				let msg = document.querySelector("#message");
+				let btn = document.querySelector("#submit");
+
+				btn.addEventListener("click", (e) => {
+					e.preventDefault();
+					if (name.value == "" || email.value == "" || msg.value == "") {
+						emptyerror();
+					} 
+          
+          else {
+						loader.style.display = "flex";
+						sendmail(name.value, email.value, msg.value);
+						success();
+						loader.style.display = "none";
+					}
+				});
+			}
+			validate();
+
+			function sendmail(name, email, msg) {
+				emailjs.send("service_2lrhtuo","template_58jlfat", {
+					to_name: name,
+					from_name: email,
+					message: msg,
+				});
+			}
+
+			function emptyerror() {
+				Swal.fire({
+					icon: "error",
+					title: "Oops...",
+					text: "Fields cannot be empty!",
+				});
+			}
+
+			function error() {
+				Swal.fire({
+					icon: "error",
+					title: "Oops...",
+					text: "Something went wrong!",
+				});
+			}
+
+			function success() {
+				Swal.fire({
+					icon: "success",
+					title: "Good Job",
+					text: "Successfully sent message",
+				});
+			}
+		</script>
+	
+{% endblock content %}
