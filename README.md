@@ -1,5 +1,5 @@
 # HomeFood 🍕
-This is a Dynamic Food Delivery Website.
+This is a Dynamic Food Delivery Website Using Django and JavaScript.
 
 ## Features
 - User and guest checkout capabilities.
@@ -21,14 +21,12 @@ This is a Dynamic Food Delivery Website.
   <img width="780" src="Previews/HomePage.png">
 </p>
 
-<hr>
 
 #### Foods Page
 <p align="left">
   <img width="780" src="Previews/FoodsPage.png">
 </p>
 
-<hr>
 
 #### Cart Page
 <p align="left">
@@ -41,10 +39,9 @@ This is a Dynamic Food Delivery Website.
   <img width="780" src="Previews/CheckoutPage.png">
 </p>
 
-<hr>
 
 #### ContactPage
-<hr>
+
 <p align="left">
   <img width="780" src="Previews/ContactPage.png">
 </p>
